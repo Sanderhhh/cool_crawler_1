@@ -42,6 +42,11 @@ public class Crawler {
                 Crawl(current_step + 1, URL);
             }
         }
+        if (visited_list.size() == 10)
+        {
+            th.calculate_word_importance();
+            return;
+        }
     }
 
     public ArrayList<String> fetch_data(String full_url) {

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d378afc-e05d-4e52-9ae7-2a00a186ca07" name="Changes" comment="Removed index class and put the function in Crawler, started with the pre-processing of the text.">
+    <list default="true" id="1d378afc-e05d-4e52-9ae7-2a00a186ca07" name="Changes" comment="Removed references">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Project/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/Crawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/Main.java" afterDir="false" />
@@ -90,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707311421051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed references">
+      <created>1707396695996</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707396695996</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +114,38 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Original commit, created classes for main, crawler and index." />
     <MESSAGE value="Removed index class and put the function in Crawler, started with the pre-processing of the text." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed index class and put the function in Crawler, started with the pre-processing of the text." />
+    <MESSAGE value="Removed references" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed references" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Project/Main.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
