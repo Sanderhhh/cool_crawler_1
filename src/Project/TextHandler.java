@@ -1,13 +1,20 @@
 package Project;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class TextHandler {
-    public TextHandler(String body)
+    private int top;                                                             // How many keywords we calculate
+    private String keyword_formula;                                              // either quantity, tf-idf
+    private boolean trim_stopwords;                                              // whether stop-words are trimmed
+    private Hashtable<String, HashMap<String, Integer>> term_frequency_table;    // term_frequency by page title
+    private Hashtable<String, ArrayList<String>> word_importance_table;   // sorted list with keywords per title
+
+    public TextHandler(String keyword_formula, boolean trim_stopwords)
     {
-        preprocess(body);
+        this.keyword_formula = keyword_formula;
+        this.trim_stopwords = trim_stopwords;
+        term_frequency_table = new Hashtable<>();
+        word_importance_table = new Hashtable<>();
         // Have: string with all the words
         // Need: most important words in the text
         // - Tokenize body
@@ -20,11 +27,22 @@ public class TextHandler {
         // Last step: tfidf on the data
     }
 
-    private void preprocess(String body)
+    public void preprocess(String body, String title)
     {
         ArrayList<String> tokenized = tokenize(body);
+        // System.out.println(tokenized);
         // turn tokenized list into term frequency list
-        HashMap<String, Integer> term_frequency = hash(tokenized);
+        this.term_frequency_table.put(title, hash(tokenized));        // add the webpage to the term_frequency dictionary
+        calculate_word_importance(title);
+    }
+
+    private void calculate_word_importance(String title) {
+        switch (this.keyword_formula)
+        {
+            case "quantity":
+                HashMap<String, Integer> current = term_frequency_table.get(title);
+        }
+
     }
 
     private HashMap<String, Integer> hash(ArrayList<String> tokenized) {
@@ -38,7 +56,6 @@ public class TextHandler {
                 term_frequency.put(token, 1);
             }
         }
-        System.out.println(term_frequency);
         return term_frequency;
     }
 
@@ -54,6 +71,4 @@ public class TextHandler {
         return tokenized;
     }
 
-    private void  tf_idf()
-    {}
 }

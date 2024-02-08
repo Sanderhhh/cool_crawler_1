@@ -17,9 +17,11 @@ import java.util.Queue;
 public class Crawler {
     private final int max_steps;
     private ArrayList<String> visited_list = new ArrayList<>();
+    private TextHandler th;
 
-    public Crawler(String url, String suburl, int max_steps) {
+    public Crawler(String url, String suburl, int max_steps, TextHandler th) {
         this.max_steps = max_steps;
+        this.th = th;
         Crawl(1, url + suburl);
     }
 
@@ -31,9 +33,10 @@ public class Crawler {
         }
         visited_list.add(current_url);
         ArrayList<String> text_and_links = fetch_data(current_url);
-        TextHandler th = new TextHandler(text_and_links.get(0));
+        th.preprocess(text_and_links.get(0), text_and_links.get(1));
         // TODO: Do something with the body
-        text_and_links.remove(0);                     // remove the body, now there are only links left.
+        text_and_links.remove(0);                     // remove the body
+        text_and_links.remove(0);                     // remove the title, now there are only links left.
         if (current_step != max_steps) {                    // don't want to waste time on links over the step limit
             for (String URL : text_and_links) {
                 Crawl(current_step + 1, URL);
@@ -57,6 +60,7 @@ public class Crawler {
             return null;
         }
         text_and_links.add(document.body().text());                 // body of the page in the first array-list slot
+        text_and_links.add(document.title());                       // title of the page in the second slot
         for (Element href : document.select("a[href]")) {   // all the other slots will be the links
             text_and_links.add(href.absUrl("href"));
         }
