@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d378afc-e05d-4e52-9ae7-2a00a186ca07" name="Changes" comment="Removed references">
+    <list default="true" id="1d378afc-e05d-4e52-9ae7-2a00a186ca07" name="Changes" comment="Added timer, last bugfixes, comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Project/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/Crawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/Main.java" afterDir="false" />
@@ -42,26 +42,14 @@
     "last_opened_file_path": "C:/Users/hofsa/IdeaProjects/WebIQ_application/jsoup-1.17.2.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Project.Main" />
       <module name="crawler1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="crawler1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="crawler1" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707396695996</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added two methods of calculating the word importance score.">
+      <created>1707406596570</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707406596570</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,37 +110,16 @@
     <MESSAGE value="Original commit, created classes for main, crawler and index." />
     <MESSAGE value="Removed index class and put the function in Crawler, started with the pre-processing of the text." />
     <MESSAGE value="Removed references" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed references" />
+    <MESSAGE value="Added two methods of calculating the word importance score." />
+    <MESSAGE value="Added timer, last bugfixes, comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added timer, last bugfixes, comments." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Project/Main.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Project/TextHandler.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="System.currentTimeMillis()" />
+        <watch expression="keywords_table.put(title, keywords)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
