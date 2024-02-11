@@ -18,7 +18,7 @@ public class Main {
         Crawler crawler = new Crawler(url,
                                     2,
                                     true,
-                                    360,
+                                    60,
                                         th);
 
         crawler.crawl(1, url + suburl);

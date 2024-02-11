@@ -150,7 +150,7 @@ public class TextHandler {
         for (int idx = 0; idx < max_id; idx++) {
             for (String token : current.keySet()) {             // only add the keyword if not already present
                 if (!keywords.contains(token)) {                // check if word has already been added
-                    if (current.get(token) > max) {
+                    if ((current.get(token) > max) && token != null) {
                         max = current.get(token);
                         max_word = token;
                     }

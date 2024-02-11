@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1d378afc-e05d-4e52-9ae7-2a00a186ca07" name="Changes" comment="Added timer, last bugfixes, comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Project/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/Crawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Project/TextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/TextHandler.java" afterDir="false" />
     </list>
@@ -38,7 +37,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/hofsa/IdeaProjects/WebIQ_application/jsoup-1.17.2.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -92,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707406596570</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added timer, last bugfixes, comments.">
+      <created>1707692421004</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707692421004</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
